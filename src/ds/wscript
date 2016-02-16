@@ -1,0 +1,5 @@
+def build(bld):
+  bld.stlib(source=['list.c', 'stack.c', 'queue.c'],
+	    target='ds',
+	    cflags=['-Wall', '-Werror', '-std=c11'],
+	    )

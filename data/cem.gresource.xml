@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/bandari/cem">
+    <file preprocess="xml-stripblanks">glade/main.glade</file>
+    <file preprocess="xml-stripblanks">glade/cem_menu.glade</file>
+  </gresource>
+</gresources>

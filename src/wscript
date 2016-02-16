@@ -1,0 +1,19 @@
+def build(bld):
+  bld.shlib(
+    source=['cem.c', 'cad/bs_cad_object.c', 
+		     'cad/bs_cad_point.c' ,
+		     'cad/bs_cad_line.c' ,
+		     'cad/bs_cad_plane.c' ,
+		     'cad/bs_cad_cuboid.c' ,
+		     'cad/bs_cad_disk.c' ,
+		     'cad/bs_cad_ellipsoid.c' ,
+		     'cad/bs_cad_toroid.c' ,
+		     'cad/bs_cad_text.c' ,
+		     'cad/bs_cad_colour.c' ,
+	   ],
+    target='cem',
+    includes=['.', '../../build'],
+    use='ds',
+    )
+  bld.recurse('ds')
+  bld.recurse('gui')

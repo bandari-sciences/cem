@@ -1,0 +1,12 @@
+def build(bld):
+  bld.program(
+    source=['bs_gui.c', 
+	    'bs_gui_application.c',
+	    'bs_gui_main_window.c',
+	    'bs_glade_resource.c',
+	    'widgets/bs_gui_gl_area.c',
+	   ],
+    target='cem_gui',
+    includes=['.', '../../'],
+    use=['GTK3'],
+    )
